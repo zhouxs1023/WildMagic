@@ -95,7 +95,6 @@
     <Link>
       <OutputFile>$(TargetPath)</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(OutDir)GenerateProjects_VC90.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention>
@@ -118,7 +117,6 @@
     <Link>
       <OutputFile>$(TargetPath)</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(OutDir)GenerateProjects_VC90.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention>
@@ -138,7 +136,6 @@
     <Link>
       <OutputFile>$(TargetPath)</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(OutDir)GenerateProjects_VC90.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -161,7 +158,6 @@
     <Link>
       <OutputFile>$(TargetPath)</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(OutDir)GenerateProjects_VC90.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -174,11 +170,15 @@
     <ClCompile Include="GenerateProjects.cpp" />
     <ClCompile Include="TemplateVC100.cpp" />
     <ClCompile Include="TemplateVC110.cpp" />
+    <ClCompile Include="TemplateVC120.cpp" />
+    <ClCompile Include="TemplateVC140.cpp" />
     <ClCompile Include="TemplateXC44.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TemplateVC100.h" />
     <ClInclude Include="TemplateVC110.h" />
+    <ClInclude Include="TemplateVC120.h" />
+    <ClInclude Include="TemplateVC140.h" />
     <ClInclude Include="TemplateXC44.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

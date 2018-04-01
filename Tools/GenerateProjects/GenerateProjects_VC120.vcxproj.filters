@@ -26,9 +26,6 @@
     <ClCompile Include="TemplateVC120.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TemplateVC140.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TemplateVC100.h">
@@ -41,9 +38,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="TemplateVC120.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TemplateVC140.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

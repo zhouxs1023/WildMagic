@@ -13,7 +13,7 @@ LIBPATH := ../../SDK/Library/$(CFG)
 
 ifeq (Dynamic,$(findstring Dynamic,$(CFG)))
 SOVER = 5
-RELVER = $(SOVER).14
+RELVER = $(SOVER).15
 CFLAGS += -fPIC
 AR := $(CC)
 ARFLAGS := $(LDFLAGS) -L $(LIBPATH) -shared -fPIC -Wl,-soname,libWm5Physics.so.$(SOVER) -lWm5Core -lWm5Mathematics -o

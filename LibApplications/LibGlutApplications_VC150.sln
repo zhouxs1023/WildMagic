@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibGlutApplications_VC150", "LibGlutApplications_VC150.vcxproj", "{9865C1CD-5235-497B-8DE2-138E6712F1AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		DebugDLL|x86 = DebugDLL|x86
+		Release|x86 = Release|x86
+		ReleaseDLL|x86 = ReleaseDLL|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9865C1CD-5235-497B-8DE2-138E6712F1AB}.Debug|x86.ActiveCfg = Debug|Win32
+		{9865C1CD-5235-497B-8DE2-138E6712F1AB}.Debug|x86.Build.0 = Debug|Win32
+		{9865C1CD-5235-497B-8DE2-138E6712F1AB}.DebugDLL|x86.ActiveCfg = DebugDLL|Win32
+		{9865C1CD-5235-497B-8DE2-138E6712F1AB}.DebugDLL|x86.Build.0 = DebugDLL|Win32
+		{9865C1CD-5235-497B-8DE2-138E6712F1AB}.Release|x86.ActiveCfg = Release|Win32
+		{9865C1CD-5235-497B-8DE2-138E6712F1AB}.Release|x86.Build.0 = Release|Win32
+		{9865C1CD-5235-497B-8DE2-138E6712F1AB}.ReleaseDLL|x86.ActiveCfg = ReleaseDLL|Win32
+		{9865C1CD-5235-497B-8DE2-138E6712F1AB}.ReleaseDLL|x86.Build.0 = ReleaseDLL|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

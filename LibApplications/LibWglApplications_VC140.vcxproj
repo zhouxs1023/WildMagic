@@ -424,6 +424,23 @@
   <ItemGroup>
     <None Include="Wm5WindowApplication.inl" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LibCore\LibCore_VC140.vcxproj">
+      <Project>{4915b5b4-800b-40e2-a46b-703f8f38e066}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\LibGraphics\LibWglGraphics_VC140.vcxproj">
+      <Project>{d710fed2-d476-487d-b22f-63ff60737f7b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\LibImagics\LibImagics_VC140.vcxproj">
+      <Project>{280ab789-07ff-49fd-9fdd-4459ac601d24}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\LibMathematics\LibMathematics_VC140.vcxproj">
+      <Project>{d7b74341-c2e2-470b-a375-3e97ceca3457}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\LibPhysics\LibPhysics_VC140.vcxproj">
+      <Project>{e78b9daf-8937-4c0d-8c49-9c01ebfcf529}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

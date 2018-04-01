@@ -1303,6 +1303,11 @@
     <None Include="Rational\Wm5RVector2.inl" />
     <None Include="Rational\Wm5RVector3.inl" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LibCore\LibCore_VC120.vcxproj">
+      <Project>{4915b5b4-800b-40e2-a46b-703f8f38e066}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

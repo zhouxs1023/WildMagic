@@ -4,7 +4,7 @@
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.0 (2010/01/01)
+// File Version: 5.0.1 (2017/05/21)
 
 #include "Wm5GraphicsPCH.h"
 #include "Wm5Terrain.h"
@@ -147,7 +147,7 @@ void Terrain::LoadHeader (const std::string& heightName)
     // unpredictable.
     std::string fileName = heightName + ".wmhf";
     FileIO header(fileName, mMode);
-    assertion(header, "Cannot open file %s\n", fileName);
+    assertion(header, "Cannot open file %s\n", fileName.c_str());
 
     header.Read(sizeof(int), &mNumRows);
     header.Read(sizeof(int), &mNumCols);
@@ -170,7 +170,7 @@ void Terrain::LoadPage (int row, int col, const std::string& heightName,
     unsigned short* heights = new1<unsigned short>(numHeights);
     std::string fileName = heightName + "." + heightSuffix + ".wmhf";
     FileIO heightFile(fileName, mMode);
-    assertion(heightFile, "Cannot open file %s\n", fileName);
+    assertion(heightFile, "Cannot open file %s\n", fileName.c_str());
     if (heightFile)
     {
         heightFile.Read(sizeof(unsigned short), numHeights, heights);
