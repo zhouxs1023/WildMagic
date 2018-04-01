@@ -4,7 +4,7 @@
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.16.0 (2017/08/24)
+// File Version: 5.16.1 (2017/10/12)
 
 #ifndef WM5TAPOINT_H
 #define WM5TAPOINT_H
@@ -242,6 +242,9 @@ public:
 
     // Special vector.
     static const TAPoint ORIGIN() { return TAPoint((Real)0, (Real)0, (Real)0); }
+
+protected:
+    using THPoint<Real>::mTuple;
 };
 
 template <typename Real>

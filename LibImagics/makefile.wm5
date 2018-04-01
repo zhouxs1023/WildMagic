@@ -11,8 +11,8 @@ build :
 	cd Images           ; make -f ../makeprj.wm5 CFG=$(CFG)
 	cd RasterDrawing    ; make -f ../makeprj.wm5 CFG=$(CFG)
 	cd Segmenters       ; make -f ../makeprj.wm5 CFG=$(CFG)
-	ln -sf -T libWm5Imagics.so.5.16 ../SDK/Library/$(CFG)/libWm5Imagics.so
-	ln -sf -T libWm5Imagics.so.5.16 ../SDK/Library/$(CFG)/libWm5Imagics.so.5
+	ln -sf -T libWm5Imagics.so.5.17 ../SDK/Library/$(CFG)/libWm5Imagics.so
+	ln -sf -T libWm5Imagics.so.5.17 ../SDK/Library/$(CFG)/libWm5Imagics.so.5
 
 clean :
 	cd BinaryOperations ; make clean -f ../makeprj.wm5 CFG=$(CFG)

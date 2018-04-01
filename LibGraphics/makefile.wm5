@@ -19,8 +19,8 @@ build :
 	cd Sorting         ; make -f ../makeprj.wm5 CFG=$(CFG)
 	cd Terrain         ; make -f ../makeprj.wm5 CFG=$(CFG)
 	cd Renderers/GlxRenderer ; make -f makerend.wm5 CFG=$(CFG)
-	ln -sf -T libWm5Graphics.so.5.16 ../SDK/Library/$(CFG)/libWm5Graphics.so
-	ln -sf -T libWm5Graphics.so.5.16 ../SDK/Library/$(CFG)/libWm5Graphics.so.5
+	ln -sf -T libWm5Graphics.so.5.17 ../SDK/Library/$(CFG)/libWm5Graphics.so
+	ln -sf -T libWm5Graphics.so.5.17 ../SDK/Library/$(CFG)/libWm5Graphics.so.5
 
 clean :
 	cd Controllers     ; make clean -f ../makeprj.wm5 CFG=$(CFG)

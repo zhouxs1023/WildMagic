@@ -21,8 +21,8 @@ build :
 	cd Objects3D             ; make -f ../makeprj.wm5 CFG=$(CFG)
 	cd Query                 ; make -f ../makeprj.wm5 CFG=$(CFG)
 	cd Rational              ; make -f ../makeprj.wm5 CFG=$(CFG)
-	ln -sf -T libWm5Mathematics.so.5.16 ../SDK/Library/$(CFG)/libWm5Mathematics.so
-	ln -sf -T libWm5Mathematics.so.5.16 ../SDK/Library/$(CFG)/libWm5Mathematics.so.5
+	ln -sf -T libWm5Mathematics.so.5.17 ../SDK/Library/$(CFG)/libWm5Mathematics.so
+	ln -sf -T libWm5Mathematics.so.5.17 ../SDK/Library/$(CFG)/libWm5Mathematics.so.5
 
 clean :
 	cd Algebra               ; make clean -f ../makeprj.wm5 CFG=$(CFG)

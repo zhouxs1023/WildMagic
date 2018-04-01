@@ -4,7 +4,7 @@
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.16.0 (2017/08/24)
+// File Version: 5.16.1 (2017/10/12)
 
 #ifndef WM5TAVECTOR_H
 #define WM5TAVECTOR_H
@@ -336,6 +336,9 @@ public:
     {
         return TAVector((Real)0, (Real)0, (Real)1);
     }
+
+protected:
+    using THPoint<Real>::mTuple;
 };
 
 template <typename Real>

@@ -11,7 +11,7 @@ endif
 
 ifeq (Dynamic,$(findstring Dynamic,$(CFG)))
 SOVER = 5
-RELVER = $(SOVER).16
+RELVER = $(SOVER).17
 CFLAGS += -fPIC
 AR := $(CC)
 ARFLAGS := $(LDFLAGS) -shared -fPIC -Wl,-soname,libWm5Core.so.$(SOVER) -o
