@@ -1,0 +1,30 @@
+CFG ?= Debug
+
+CC := /usr/bin/g++
+CFLAGS := -c -D__LINUX__ -DWM5_USE_OPENGL
+
+ifeq (Debug,$(findstring Debug,$(CFG)))
+CFLAGS += -g -D_DEBUG
+else
+CFLAGS += -O2 -DNDEBUG
+endif
+
+INCPATH := -I ../../SDK/Include
+SRC := $(notdir $(wildcard *.cpp))
+OBJ := $(SRC:%.cpp=$(CFG)/%.o)
+LIBPATH := -L ../../SDK/Library/$(CFG)
+WLIBS := -lWm5Applications -lWm5Graphics -lWm5Imagics -lWm5Physics -lWm5Mathematics -lWm5Core
+XLIBS := -lX11 -lXext
+GLIBS := -lGL -lGLU
+LIBS := $(WLIBS) $(XLIBS) $(GLIBS) -lpthread -lm 
+
+build : $(OBJ)
+	$(CC) $(LIBPATH) $(OBJ) -o $(APP).$(CFG) $(LIBS)
+
+$(CFG)/%.o : %.cpp
+	@mkdir -p $(CFG)
+	$(CC) $(CFLAGS) $(INCPATH) $< -o $@
+
+clean :
+	rm -rf $(CFG)
+	rm -f $(APP).$(CFG)

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibGlutApplications_VC100", "LibGlutApplications_VC100.vcxproj", "{F033C1E9-C7A7-45FC-9175-117A8797B072}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		DebugDLL|Win32 = DebugDLL|Win32
+		Release|Win32 = Release|Win32
+		ReleaseDLL|Win32 = ReleaseDLL|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F033C1E9-C7A7-45FC-9175-117A8797B072}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F033C1E9-C7A7-45FC-9175-117A8797B072}.Debug|Win32.Build.0 = Debug|Win32
+		{F033C1E9-C7A7-45FC-9175-117A8797B072}.DebugDLL|Win32.ActiveCfg = DebugDLL|Win32
+		{F033C1E9-C7A7-45FC-9175-117A8797B072}.DebugDLL|Win32.Build.0 = DebugDLL|Win32
+		{F033C1E9-C7A7-45FC-9175-117A8797B072}.Release|Win32.ActiveCfg = Release|Win32
+		{F033C1E9-C7A7-45FC-9175-117A8797B072}.Release|Win32.Build.0 = Release|Win32
+		{F033C1E9-C7A7-45FC-9175-117A8797B072}.ReleaseDLL|Win32.ActiveCfg = ReleaseDLL|Win32
+		{F033C1E9-C7A7-45FC-9175-117A8797B072}.ReleaseDLL|Win32.Build.0 = ReleaseDLL|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

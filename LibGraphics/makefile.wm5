@@ -1,0 +1,40 @@
+CFG ?= Debug
+
+build :
+	@mkdir -p ../SDK/Include
+	@mkdir -p ../SDK/Library/$(CFG)
+	@mkdir -p $(CFG)
+	@cp -fp *.h ../SDK/Include
+	cd Controllers     ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd CurvesSurfaces  ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd DataTypes       ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd Detail          ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd GlobalEffects   ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd ImageProcessing ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd LocalEffects    ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd Resources       ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd SceneGraph      ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd ShaderFloats    ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd Shaders         ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd Sorting         ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd Terrain         ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd Renderers/GlxRenderer ; make -f makerend.wm5 CFG=$(CFG)
+	ln -sf -T libWm5Graphics.so.5.14 ../SDK/Library/$(CFG)/libWm5Graphics.so
+	ln -sf -T libWm5Graphics.so.5.14 ../SDK/Library/$(CFG)/libWm5Graphics.so.5
+
+clean :
+	cd Controllers     ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd CurvesSurfaces  ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd DataTypes       ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd Detail          ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd GlobalEffects   ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd ImageProcessing ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd LocalEffects    ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd Resources       ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd SceneGraph      ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd ShaderFloats    ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd Shaders         ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd Sorting         ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd Terrain         ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd Renderers/GlxRenderer ; make clean -f makerend.wm5 CFG=$(CFG)
+	@rm -rf $(CFG)

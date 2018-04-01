@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibMathematics_VC120", "LibMathematics_VC120.vcxproj", "{D7B74341-C2E2-470B-A375-3E97CECA3457}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		DebugDLL|Win32 = DebugDLL|Win32
+		DebugDLL|x64 = DebugDLL|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+		ReleaseDLL|Win32 = ReleaseDLL|Win32
+		ReleaseDLL|x64 = ReleaseDLL|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7B74341-C2E2-470B-A375-3E97CECA3457}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D7B74341-C2E2-470B-A375-3E97CECA3457}.Debug|Win32.Build.0 = Debug|Win32
+		{D7B74341-C2E2-470B-A375-3E97CECA3457}.Debug|x64.ActiveCfg = Debug|x64
+		{D7B74341-C2E2-470B-A375-3E97CECA3457}.Debug|x64.Build.0 = Debug|x64
+		{D7B74341-C2E2-470B-A375-3E97CECA3457}.DebugDLL|Win32.ActiveCfg = DebugDLL|Win32
+		{D7B74341-C2E2-470B-A375-3E97CECA3457}.DebugDLL|Win32.Build.0 = DebugDLL|Win32
+		{D7B74341-C2E2-470B-A375-3E97CECA3457}.DebugDLL|x64.ActiveCfg = DebugDLL|x64
+		{D7B74341-C2E2-470B-A375-3E97CECA3457}.DebugDLL|x64.Build.0 = DebugDLL|x64
+		{D7B74341-C2E2-470B-A375-3E97CECA3457}.Release|Win32.ActiveCfg = Release|Win32
+		{D7B74341-C2E2-470B-A375-3E97CECA3457}.Release|Win32.Build.0 = Release|Win32
+		{D7B74341-C2E2-470B-A375-3E97CECA3457}.Release|x64.ActiveCfg = Release|x64
+		{D7B74341-C2E2-470B-A375-3E97CECA3457}.Release|x64.Build.0 = Release|x64
+		{D7B74341-C2E2-470B-A375-3E97CECA3457}.ReleaseDLL|Win32.ActiveCfg = ReleaseDLL|Win32
+		{D7B74341-C2E2-470B-A375-3E97CECA3457}.ReleaseDLL|Win32.Build.0 = ReleaseDLL|Win32
+		{D7B74341-C2E2-470B-A375-3E97CECA3457}.ReleaseDLL|x64.ActiveCfg = ReleaseDLL|x64
+		{D7B74341-C2E2-470B-A375-3E97CECA3457}.ReleaseDLL|x64.Build.0 = ReleaseDLL|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

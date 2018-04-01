@@ -1,0 +1,24 @@
+CFG ?= Debug
+
+build :
+	@mkdir -p ../SDK/Include
+	@mkdir -p ../SDK/Library/$(CFG)
+	@mkdir -p $(CFG)
+	@cp -fp *.h ../SDK/Include
+	cd BinaryOperations ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd Extraction       ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd Filters          ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd Images           ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd RasterDrawing    ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd Segmenters       ; make -f ../makeprj.wm5 CFG=$(CFG)
+	ln -sf -T libWm5Imagics.so.5.14 ../SDK/Library/$(CFG)/libWm5Imagics.so
+	ln -sf -T libWm5Imagics.so.5.14 ../SDK/Library/$(CFG)/libWm5Imagics.so.5
+
+clean :
+	cd BinaryOperations ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd Extraction       ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd Filters          ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd Images           ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd RasterDrawing    ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd Segmenters       ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	@rm -rf $(CFG)

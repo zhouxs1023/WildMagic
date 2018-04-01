@@ -1,0 +1,44 @@
+CFG ?= Debug
+
+build :
+	@mkdir -p ../SDK/Include
+	@mkdir -p ../SDK/Library/$(CFG)
+	@mkdir -p $(CFG)
+	@cp -fp *.h ../SDK/Include
+	cd Algebra               ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd Approximation         ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd Base                  ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd ComputationalGeometry ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd Containment           ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd CurvesSurfacesVolumes ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd Distance              ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd Interpolation         ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd Intersection          ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd Meshes                ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd Miscellaneous         ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd NumericalAnalysis     ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd Objects2D             ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd Objects3D             ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd Query                 ; make -f ../makeprj.wm5 CFG=$(CFG)
+	cd Rational              ; make -f ../makeprj.wm5 CFG=$(CFG)
+	ln -sf -T libWm5Mathematics.so.5.14 ../SDK/Library/$(CFG)/libWm5Mathematics.so
+	ln -sf -T libWm5Mathematics.so.5.14 ../SDK/Library/$(CFG)/libWm5Mathematics.so.5
+
+clean :
+	cd Algebra               ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd Approximation         ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd Base                  ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd ComputationalGeometry ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd Containment           ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd CurvesSurfacesVolumes ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd Distance              ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd Interpolation         ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd Intersection          ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd Meshes                ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd Miscellaneous         ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd NumericalAnalysis     ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd Objects2D             ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd Objects3D             ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd Query                 ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	cd Rational              ; make clean -f ../makeprj.wm5 CFG=$(CFG)
+	@rm -rf $(CFG)

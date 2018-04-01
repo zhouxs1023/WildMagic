@@ -1,0 +1,31 @@
+CFG ?= Debug
+
+build :
+	@mkdir -p SDK/Include
+	@mkdir -p SDK/Library/$(CFG)
+	cd LibCore                           && make -f makefile.wm5 CFG=$(CFG)
+	cd LibMathematics                    && make -f makefile.wm5 CFG=$(CFG)
+	cd LibImagics                        && make -f makefile.wm5 CFG=$(CFG)
+	cd LibPhysics                        && make -f makefile.wm5 CFG=$(CFG)
+	cd LibGraphics                       && make -f makefile.wm5 CFG=$(CFG)
+	cd LibApplications                   && make -f makefile.wm5 CFG=$(CFG)
+	cd SampleMathematics                 && make -f makefile.wm5 CFG=$(CFG)
+	cd SampleImagics                     && make -f makefile.wm5 CFG=$(CFG)
+	cd SamplePhysics                     && make -f makefile.wm5 CFG=$(CFG)
+	cd SampleGraphics                    && make -f makefile.wm5 CFG=$(CFG)
+
+clean :
+	cd LibCore                           && make clean -f makefile.wm5 CFG=$(CFG)
+	cd LibMathematics                    && make clean -f makefile.wm5 CFG=$(CFG)
+	cd LibImagics                        && make clean -f makefile.wm5 CFG=$(CFG)
+	cd LibPhysics                        && make clean -f makefile.wm5 CFG=$(CFG)
+	cd LibGraphics                       && make clean -f makefile.wm5 CFG=$(CFG)
+	cd LibApplications                   && make clean -f makefile.wm5 CFG=$(CFG)
+	cd SampleMathematics                 && make clean -f makefile.wm5 CFG=$(CFG)
+	cd SampleImagics                     && make clean -f makefile.wm5 CFG=$(CFG)
+	cd SamplePhysics                     && make clean -f makefile.wm5 CFG=$(CFG)
+	cd SampleGraphics                    && make clean -f makefile.wm5 CFG=$(CFG)
+	@rm -f SDK/Include/*.*
+	@rm -f SDK/Library/$(CFG)/*.*
+	@rm -rf SDK/Library/$(CFG)
+
