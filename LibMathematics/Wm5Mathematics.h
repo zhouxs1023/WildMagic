@@ -4,7 +4,7 @@
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.6 (2014/01/04)
+// File Version: 5.0.7 (2017/08/24)
 
 #ifndef WM5MATHEMATICS_H
 #define WM5MATHEMATICS_H
@@ -24,6 +24,12 @@
 #include "Wm5Matrix4.h"
 #include "Wm5Polynomial1.h"
 #include "Wm5Quaternion.h"
+#include "Wm5TAPoint.h"
+#include "Wm5TAVector.h"
+#include "Wm5THMatrix.h"
+#include "Wm5THPlane.h"
+#include "Wm5THPoint.h"
+#include "Wm5THQuaternion.h"
 #include "Wm5Vector2.h"
 #include "Wm5Vector3.h"
 #include "Wm5Vector4.h"

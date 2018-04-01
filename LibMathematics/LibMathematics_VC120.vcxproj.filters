@@ -2014,6 +2014,24 @@
     <ClInclude Include="NumericalAnalysis\Wm5SymmetricEigensolverGTE.h">
       <Filter>NumericalAnalysis</Filter>
     </ClInclude>
+    <ClInclude Include="Algebra\Wm5TAPoint.h">
+      <Filter>Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Algebra\Wm5TAVector.h">
+      <Filter>Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Algebra\Wm5THMatrix.h">
+      <Filter>Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Algebra\Wm5THPlane.h">
+      <Filter>Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Algebra\Wm5THPoint.h">
+      <Filter>Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Algebra\Wm5THQuaternion.h">
+      <Filter>Algebra</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Base\Wm5BitHacks.inl">

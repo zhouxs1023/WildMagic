@@ -852,6 +852,12 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Algebra\Wm5TAPoint.h" />
+    <ClInclude Include="Algebra\Wm5TAVector.h" />
+    <ClInclude Include="Algebra\Wm5THMatrix.h" />
+    <ClInclude Include="Algebra\Wm5THPlane.h" />
+    <ClInclude Include="Algebra\Wm5THPoint.h" />
+    <ClInclude Include="Algebra\Wm5THQuaternion.h" />
     <ClInclude Include="Approximation\Wm5ApprPolynomialFit2.h" />
     <ClInclude Include="Approximation\Wm5ApprPolynomialFit3.h" />
     <ClInclude Include="Approximation\Wm5ApprPolynomialFit4.h" />

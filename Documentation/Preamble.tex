@@ -1,0 +1,118 @@
+\newcommand{\PdfDocument}[1]{
+\usepackage[pdftex]{graphicx,color}
+\definecolor{DarkGreen}{rgb}{0,0.5,0}
+\usepackage[pdftex,
+  pdftitle={#1},
+  pdfauthor={David Eberly},
+  pdfstartview={FitH},
+  pdfpagelayout={OneColumn},
+  colorlinks={true},
+  linkcolor={DarkGreen},
+  urlcolor={blue},
+  bookmarksnumbered={true}
+]
+{hyperref}
+
+\topmargin 0in
+\textheight 8in
+\oddsidemargin 0in
+\evensidemargin 0in
+\textwidth 6.5in
+\parskip 0.1in
+\parindent 0in
+}
+
+\newcommand{\PdfTitle}[2]{
+\begin{flushleft}
+  {\LARGE\bf #1} \\
+  \hspace*{1in} \\
+  David Eberly \\
+  Geometric Tools, LLC \\
+  \href{http://www.geometrictools.com/}{http://www.geometrictools.com/} \\
+  Copyright \copyright \/ 1998-2010.  All Rights Reserved. \\
+  \hspace*{1in} \\
+  Created: #2 \\
+\end{flushleft}
+\tableofcontents
+\newpage
+}
+
+\newcommand{\PdfTitleRevised}[3]{
+\begin{flushleft}
+  {\LARGE\bf #1} \\
+  \hspace*{1in} \\
+  David Eberly \\
+  Geometric Tools, LLC \\
+  \href{http://www.geometrictools.com/}{http://www.geometrictools.com/} \\
+  Copyright \copyright \/ 1998-2010.  All Rights Reserved. \\
+  \hspace*{1in} \\
+  Created: #2 \\
+  Last Modified: #3 \\
+\end{flushleft}
+\tableofcontents
+\newpage
+}
+
+\renewcommand{\arraystretch}{1.5}
+
+\newcommand{\ATan}{{\mbox{\rm Tan}^{-1}}}
+\newcommand{\ATanh}{{\mbox{\rm Tanh}^{-1}}}
+\newcommand{\Code}[1]{{\tt #1}}
+\newcommand{\Cross}{{\mbox{\rm Cross}}}
+\newcommand{\Diag}{\mbox{\rm Diag}}
+\newcommand{\DIV}{\;{\mbox{\rm div}}\;}
+\newcommand{\Grad}{\nabla}
+\newcommand{\GradVec}{\mbox{\boldmath $\nabla$}}
+\newcommand{\Integer}{\mbox{\rm Z}\hspace{-3pt}\mbox{\rm Z}}
+\newcommand{\MOD}{\;{\mbox{\rm mod}}\;}
+\newcommand{\ODer}[2]{\frac{d #1}{d #2}}
+\newcommand{\ODerT}[2]{\frac{d^2 #1}{d {#2}^2}}
+\newcommand{\ODerM}[3]{\frac{d #1}{d #2 \, d #3}}
+\newcommand{\PDer}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\PDerT}[2]{\frac{\partial^2 #1}{\partial {#2}^2}}
+\newcommand{\PDerM}[3]{\frac{\partial^2 #1}{\partial #2 \, \partial #3}}
+\newcommand{\Real}{\mbox{\rm I}\hspace{-2pt}\mbox{\rm R}}
+\newcommand{\Sbt}[1]{{\mbox{\rm\scriptsize #1}}}
+\newcommand{\TRN}{{\mbox{\scriptsize T}}}
+\newcommand{\Vector}[1]{\mbox{\bf #1}}
+\newcommand{\VectorM}[1]{\mbox{\boldmath $#1$}}
+
+\newenvironment{Matrix}[1]{\left[ \begin{array}{#1}}{\end{array} \right]}
+
+% "Example" environment
+\newtheorem{localExample}{Example}[section]
+\newenvironment{Example}[1]{
+  \begin{localExample} \label{#1} \rm
+}{
+  $\bowtie$
+  \end{localExample}
+}
+
+% "Figure" environment
+\newtheorem{localFigure}{Figure}[section]
+\newenvironment{Figure}[1]{
+  \begin{center}
+  \begin{minipage}{6in}
+  \par\noindent\hspace*{0pt}\hrulefill
+  
+  \begin{localFigure} \label{#1}
+  \rm
+}{
+  \end{localFigure}
+  \par\noindent\hspace*{0pt}\hrulefill
+  \end{minipage}
+  \end{center}
+}
+
+% "Table" environment
+\newtheorem{localTable}{Table}[section]
+\newenvironment{Table}[1]{
+  \begin{center}
+  \begin{minipage}{6in}
+  
+  \begin{localTable} \label{#1}
+}{
+  \end{localTable}
+  \end{minipage}
+  \end{center}
+}

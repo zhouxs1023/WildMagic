@@ -11,8 +11,8 @@ build :
 	cd LCPSolver          ; make -f ../makeprj.wm5 CFG=$(CFG)
 	cd ParticleSystem     ; make -f ../makeprj.wm5 CFG=$(CFG)
 	cd RigidBody          ; make -f ../makeprj.wm5 CFG=$(CFG)
-	ln -sf -T libWm5Physics.so.5.14 ../SDK/Library/$(CFG)/libWm5Physics.so
-	ln -sf -T libWm5Physics.so.5.14 ../SDK/Library/$(CFG)/libWm5Physics.so.5
+	ln -sf -T libWm5Physics.so.5.16 ../SDK/Library/$(CFG)/libWm5Physics.so
+	ln -sf -T libWm5Physics.so.5.16 ../SDK/Library/$(CFG)/libWm5Physics.so.5
 
 clean :
 	cd Fluid              ; make clean -f ../makeprj.wm5 CFG=$(CFG)
